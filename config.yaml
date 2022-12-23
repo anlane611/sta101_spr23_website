@@ -1,8 +1,8 @@
-baseURL: https://sta101-fa22.netlify.app
+baseURL: https://sta101-spr23-lane.netlify.app
 languageCode: en-us
 defaultContentLanguage: en
 #title: STA101
-theme: hermit
+theme: PaperMod
 publishDir: 'public'
 pygmentsCodefences: yes
 pygmentsUseClasses: yes
@@ -11,7 +11,7 @@ copyright: This work is licensed under a Creative Commons Attribution-NonCommerc
   4.0 International License.
 enableEmoji: yes
 author:
-  name: Alexander Fisher
+  name: Andrea Lane
 blackfriday: {}
 taxonomies:
   tag: tags
@@ -23,7 +23,7 @@ params:
   dateformShort: Jan 2
   footerCopyright: ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/"
     target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  homeSubtitle: Data analysis and statistical inference.
+  homeSubtitle: Data Analysis and Statistical Inference
   justifyContent: no
   relatedPosts: no
   social:
