@@ -1,8 +1,8 @@
 baseURL: https://sta101-spr23-lane.netlify.app
 languageCode: en-us
 defaultContentLanguage: en
-#title: STA101
-theme: PaperMod
+title: "STA 101"
+theme: "PaperMod"
 publishDir: 'public'
 pygmentsCodefences: yes
 pygmentsUseClasses: yes
@@ -24,8 +24,11 @@ params:
   footerCopyright: ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/"
     target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   homeSubtitle: Data Analysis and Statistical Inference
-  justifyContent: no
+  #justifyContent: no
   relatedPosts: no
+  # defaultTheme: light
+  # defaultTheme: dark
+  defaultTheme: auto # to switch between dark or light according to browser theme
   social:
     # - name: twitter
     #   url: https://twitter.com/
@@ -40,7 +43,7 @@ params:
       #url: https://github.com/fisher-group/sta101
     - name: book
       url: https://openintro-ims.netlify.app/
-  themeColor: '#494f5c'
+  #themeColor: '#494f5c'
   #themeColor: '#000000'
   
 menu:
