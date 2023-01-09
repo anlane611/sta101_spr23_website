@@ -16,12 +16,12 @@ library(knitr)
 
 ```{r smart-date-setup}
 # set these:
-firstDay = as.Date("2022-06-27")
-firstDayID = "Mon"
-lastDay = as.Date("2022-08-04")
-lectureDays = c("Mon", "Tue", "Thu")
-labDays = c("Tue", "Thu")
-holidays = as.Date(c("2022-07-04"))
+firstDay = as.Date("2023-01-11")
+firstDayID = "Wed"
+lastDay = as.Date("2023-04-26")
+lectureDays = c("Tue", "Thu")
+labDays = c("Fri")
+holidays = as.Date(c("2023-01-16"))
 ### render table
 allDates = seq(from = firstDay, to = lastDay, by = 'day')
 schedule = data.frame(allDates,
