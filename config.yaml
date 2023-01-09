@@ -15,6 +15,30 @@ publishDir: 'public'
 # blackfriday: {}
 # taxonomies:
 #   tag: tags
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: schedule
+      name: Schedule
+      url: static/schedule/schedule.html
+      weight: 20
+    - identifier: syllabus
+      name: Syllabus
+      url: /syllabus
+      weight: 30
+    - identifier: office hours
+      name: Office Hours
+      url: https://duke.box.com/s/bfx0fkhlrss4fqguuf6fhrqhswgbsnqu
+      weight: 40
+    - identifier: practice
+      name: Practice
+      url: /practice
+      weight: 50
+
 params:
   # theme
   showToc: true
@@ -33,7 +57,7 @@ params:
   cover:
     hiddenInList: false # hide on list pages and home
     hiddenInSingle: false # hide on single page
-
+  defaultTheme: dark
   homeInfoParams:
         Title: "STA 101 Spring 2023"
         Content: "Welcome to STA 101: Data Analysis and Statistical Inference"
@@ -62,26 +86,25 @@ params:
       url: https://openintro-ims.netlify.app/
   #themeColor: '#494f5c'
   #themeColor: '#000000'
-  
-menu:
-  main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 10
-    - identifier: schedule
-      name: Schedule
-      url: static/schedule/schedule.html
-      weight: 20
-    - identifier: syllabus
-      name: Syllabus
-      url: /syllabus
-      weight: 30
-    - identifier: office hours
-      name: Office Hours
-      url: https://duke.box.com/s/bfx0fkhlrss4fqguuf6fhrqhswgbsnqu
-      weight: 40
-    - identifier: practice
-      name: Practice
-      url: /practice
-      weight: 50
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true 
