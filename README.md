@@ -1,3 +1,3 @@
 # Website for STA101
 
-### Fall, 2022
+### Spring 2023
