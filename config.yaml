@@ -87,6 +87,12 @@ params:
   #themeColor: '#494f5c'
   #themeColor: '#000000'
   # text search
+  
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+  
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
