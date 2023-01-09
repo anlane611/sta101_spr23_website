@@ -55,7 +55,7 @@ params:
       url: https://cmgr.oit.duke.edu/containers
        #<a class="inline-block" href="#"><img class="" src="{{ (default "Rlogo.svg" ) | relURL }}" alt="mysite" width="26"></a>
     - name: slack
-      url: https://sta101-fa22.slack.com
+      url: https://sta101spring2023.slack.com
     #- name: github
       #url: https://github.com/fisher-group/sta101
     - name: book
