@@ -9,9 +9,9 @@ publishDir: 'public'
 #rssLimit: 10
 # copyright: This work is licensed under a Creative Commons Attribution-NonCommercial
 #   4.0 International License.
-# enableEmoji: yes
-# author:
-#   name: Andrea Lane
+ enableEmoji: yes
+author:
+  name: Andrea Lane
 # blackfriday: {}
 # taxonomies:
 #   tag: tags
