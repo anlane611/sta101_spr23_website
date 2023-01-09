@@ -1,39 +1,56 @@
 baseURL: https://sta101-spr23-lane.netlify.app
 languageCode: en-us
 defaultContentLanguage: en
-title: "STA 101"
+title: "STA 101 Spring 2023"
 theme: "PaperMod"
 publishDir: 'public'
-pygmentsCodefences: yes
-pygmentsUseClasses: yes
-rssLimit: 10
-copyright: This work is licensed under a Creative Commons Attribution-NonCommercial
-  4.0 International License.
-enableEmoji: yes
-author:
-  name: Andrea Lane
-blackfriday: {}
-taxonomies:
-  tag: tags
+#pygmentsCodefences: yes
+#pygmentsUseClasses: yes
+#rssLimit: 10
+# copyright: This work is licensed under a Creative Commons Attribution-NonCommercial
+#   4.0 International License.
+# enableEmoji: yes
+# author:
+#   name: Andrea Lane
+# blackfriday: {}
+# taxonomies:
+#   tag: tags
 params:
-  code_copy_button: yes
-  dateform: Jan 2, 2006
-  dateformNum: '2006-01-02'
-  dateformNumTime: 2006-01-02 15:04 -0700
-  dateformShort: Jan 2
-  footerCopyright: ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/"
-    target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  homeSubtitle: Data Analysis and Statistical Inference
-  #justifyContent: no
-  relatedPosts: no
-  # defaultTheme: light
-  # defaultTheme: dark
-  defaultTheme: auto # to switch between dark or light according to browser theme
-  social:
-    # - name: twitter
-    #   url: https://twitter.com/
-    # - name: instagram
-    #   url: https://instagram.com/
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+  
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  homeInfoParams:
+        Title: STA 101 Spring 2023
+        Content: Welcome to STA 101: Data Analysis and Statistical Inference
+  # code_copy_button: yes
+  # dateform: Jan 2, 2006
+  # dateformNum: '2006-01-02'
+  # dateformNumTime: 2006-01-02 15:04 -0700
+  # dateformShort: Jan 2
+  # footerCopyright: ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+  #   target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  # homeSubtitle: Data Analysis and Statistical Inference
+  # #justifyContent: no
+  # relatedPosts: no
+  # # defaultTheme: light
+  # # defaultTheme: dark
+  # defaultTheme: auto # to switch between dark or light according to browser theme
+  socialIcons:
     - name: R
       url: https://cmgr.oit.duke.edu/containers
        #<a class="inline-block" href="#"><img class="" src="{{ (default "Rlogo.svg" ) | relURL }}" alt="mysite" width="26"></a>
@@ -48,21 +65,23 @@ params:
   
 menu:
   main:
-    - name: schedule
-      url: static/schedule/schedule.html
+    - identifier: home
+      name: Home
+      url: /
       weight: 10
-    # - name: schedule
-    #   url: /schedule/schedule
-    #   weight: 10
-    - name: syllabus
-      url: /syllabus
+    - identifier: schedule
+      name: Schedule
+      url: static/schedule/schedule.html
       weight: 20
-    - name: office hours
-      url: https://duke.box.com/s/bfx0fkhlrss4fqguuf6fhrqhswgbsnqu
+    - identifier: syllabus
+      name: Syllabus
+      url: /syllabus
       weight: 30
-    - name: practice
-      url: /practice
+    - identifier: office hours
+      name: Office Hours
+      url: https://duke.box.com/s/bfx0fkhlrss4fqguuf6fhrqhswgbsnqu
       weight: 40
-    # - name: tutorials
-    # url: tutorials/
-    # weight: 40
+    - identifier: practice
+      name: Practice
+      url: /practice
+      weight: 50
