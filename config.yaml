@@ -35,8 +35,8 @@ params:
     hiddenInSingle: false # hide on single page
 
   homeInfoParams:
-        Title: STA 101 Spring 2023
-        Content: Welcome to STA 101: Data Analysis and Statistical Inference
+        Title: "STA 101 Spring 2023"
+        Content: "Welcome to STA 101: Data Analysis and Statistical Inference"
   # code_copy_button: yes
   # dateform: Jan 2, 2006
   # dateformNum: '2006-01-02'
