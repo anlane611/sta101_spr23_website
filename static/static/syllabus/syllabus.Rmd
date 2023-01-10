@@ -2,9 +2,10 @@
 title: "Data Analysis and Statistical Inference"
 subtitle: "Spring 2023"
 output:
-  pdf_document: default
+  #pdf_document: default
   html_document:
     df_print: paged
+
 ---
 
 **Course:** STA101L-001
